@@ -44,7 +44,8 @@
 		echo "connected";
 
 	}
-	
+	ini_set('display_errors', 1); 
+
 	  $sql = "INSERT INTO information (Name,Address,Sex,Salary)VALUES('Name','Address','Sex','Salary')";
 		if(mysqli_query($conn,$sql)){
 			echo "New record created";
@@ -54,7 +55,6 @@
 				
 }
 
-		
 		
 
 	
